@@ -7,7 +7,7 @@ header {
     max-width:59.375rem; 
     margin-bottom:0; 
     height:350px; 
-    background-image: url(/images/gray-magnifying-glass-and-eyeglasses-on-top-of-open-book-3109168.jpg);
+    background-image: url(/Unit_02/images/gray-magnifying-glass-and-eyeglasses-on-top-of-open-book-3109168.jpg);
 }
 #title {
     font-size:3rem;
@@ -46,7 +46,7 @@ main h2 {
     font-weight:600;
 }
 ul {
-    list-style-image: url(/images/checkmark-icon.png);
+    list-style-image: url(//Unit_02/images/checkmark-icon.png);
     padding-top:5px;
 }
 li {

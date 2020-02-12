@@ -5,7 +5,7 @@ header, body, footer {
 
 header {
     max-width:59.375rem;   
-    background-image: url(/images/bed-blur-breakfast-cafe-405237.jpg);
+    background-image: url(/Unit_01/images/bed-blur-breakfast-cafe-405237.jpg);
     height:400px;
 }
 
@@ -43,7 +43,7 @@ main h2 {
     font-weight:600;
 }
 ul {
-    list-style-image: url(/images/icons8-ok-50.png);
+    list-style-image: url(/Unit_01/images/icons8-ok-50.png);
     padding-top:5px;
 }
 li {
