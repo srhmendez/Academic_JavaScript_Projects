@@ -46,7 +46,7 @@ main h2 {
     font-weight:600;
 }
 ul {
-    list-style-image: url(//Unit02/images/checkmark-icon.png);
+    list-style-image: url(/Unit02/images/checkmark-icon.png);
     padding-top:5px;
 }
 li {
