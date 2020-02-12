@@ -1,0 +1,64 @@
+header, body, footer {
+    margin: 0 auto;
+    max-width:59.375rem;   
+}
+
+header {
+    max-width:59.375rem; 
+    margin-bottom:0; 
+    height:350px; 
+    background-image: url(/images/gray-magnifying-glass-and-eyeglasses-on-top-of-open-book-3109168.jpg);
+}
+#title {
+    font-size:3rem;
+    margin-left:2rem;
+    color:white;
+}
+h1 {
+    font-family: 'Lato', sans-serif;    
+    font-size:2rem;
+    padding-top:.2rem;
+    padding-bottom:0rem;
+    margin-bottom:.5rem;
+    color:rgb(37, 0, 138);
+
+}
+
+header h2 {
+    font-family: 'Lato', sans-serif;
+    margin-left:2rem;
+    padding-top:0rem;
+    margin-top: 0;
+    color:white;
+}
+
+h2 {
+    color: rgb(48, 48, 48);
+}
+
+main {
+    font-family: 'Lato', sans-serif;
+    margin: 0 auto;
+}
+
+main h2 {
+    color: darkslateblue;
+    font-weight:600;
+}
+ul {
+    list-style-image: url(/images/checkmark-icon.png);
+    padding-top:5px;
+}
+li {
+    margin:5px;
+    padding-bottom:10px;
+    font-size:1.2rem;
+}
+
+footer {
+    font-family: 'Lato', sans-serif;
+    padding:.1.2rem;
+    text-align: center;
+    background: rgb(219, 219, 219);
+    max-width:950px;
+}
