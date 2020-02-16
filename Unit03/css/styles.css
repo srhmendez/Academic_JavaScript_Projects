@@ -1,0 +1,128 @@
+header, body, footer {
+    margin: 0 auto;
+    max-width:59.375rem;   
+}
+
+header {
+    margin-bottom:0; 
+    height:430px; 
+    background-image: url(/Unit03/images/mario_header.png);
+    padding-top:3rem;
+}
+
+#title {
+    font-size:3rem;
+    color:red;
+    background-color:white;
+    padding-bottom:3rem;
+    margin-top:22rem;
+    padding-top:1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+main h1 {
+    font-family: 'Lato', sans-serif;    
+    font-size:2rem;
+    padding-top:.2rem;
+    padding-bottom:0rem;
+    margin-bottom:.5rem;
+    color:rgb(37, 0, 138);
+
+}
+
+header h2 {
+    font-family: 'Lato', sans-serif;
+    padding-top:0rem;
+    margin-top: 0;
+    color:red;
+    background-color:white;
+}
+
+h2 {
+    color: rgb(48, 48, 48);
+}
+
+main {
+    font-family: 'Lato', sans-serif;
+    margin: 0 auto;
+}
+
+main h2 {
+    color: red;
+    font-weight:600;
+}
+ul {
+    list-style-image: url(/Unit02/images/checkmark-icon.png);
+    padding-top:5px;
+}
+li {
+    margin:5px;
+    padding-bottom:10px;
+    font-size:1.2rem;
+    color:blue;
+}
+
+/*Guessing Game Starts*/
+div #game {
+    display:flex;
+    
+}
+
+.h2headings {
+    padding-left:3rem;
+    background-color:rgb(255, 226, 226);
+    margin:auto;
+    padding:1rem;
+}
+
+.column {
+    float:left;
+    width: 25%;
+}
+
+#a1 {
+    display: inline;
+}
+#guess {
+    margin-top:1rem;
+    margin-left:1rem;
+    width:5.4rem;
+}
+#gamerbutton{
+    margin-left:1rem;
+}
+
+#play {
+    background-color:rgb(205, 241, 255);
+    height:20rem;
+    padding-left:5px;
+}
+#attempts {
+    background-color:rgb(205, 241, 255);
+    height:19rem;
+    padding-top:1rem;
+    padding-left:2rem;
+}
+#feedback {
+    background-color:rgb(205, 241, 255);
+    height:19rem;
+    padding-left:5px;
+    padding-top:1rem;
+}
+#ribbon {
+    background-color:rgb(205, 241, 255);
+    height:20rem;
+}
+
+
+
+
+footer {
+    font-family: 'Lato', sans-serif;
+    padding:.1.2rem;
+    text-align: center;
+    background-color: rgb(255, 226, 226);
+    max-width:950px;
+    background-position: bottom;
+    margin-top:10rem;
+    
+}
