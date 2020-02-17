@@ -93,24 +93,26 @@ div #game {
 
 #play {
     background-color:rgb(205, 241, 255);
-    height:20rem;
+    height:11rem;
     padding-left:5px;
 }
 #attempts {
     background-color:rgb(205, 241, 255);
-    height:19rem;
+    height:10rem;
     padding-top:1rem;
     padding-left:2rem;
 }
 #feedback {
     background-color:rgb(205, 241, 255);
-    height:19rem;
+    height:10rem;
     padding-left:5px;
     padding-top:1rem;
 }
 #ribbon {
     background-color:rgb(205, 241, 255);
-    height:20rem;
+    height:10rem;
+    padding-top:1rem;
+    padding-left:1rem;
 }
 
 
