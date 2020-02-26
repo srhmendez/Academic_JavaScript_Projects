@@ -20,7 +20,7 @@ const listTrees = () => {
         treeList += `${tree} <br>`
     })
     displayResults.innerHTML = `${treeList} <span>${trees.length} elements long </span>`
-}
+};
 listTrees()
 
 
@@ -29,14 +29,14 @@ listTrees()
 document.querySelector('#add_redwood').onclick = () => {
     trees.push('redwood')
     listTrees();
-}
+};
 
 //Add a pear tree to the start of the tree list
 
 document.querySelector('#add_pear').onclick = () => {
     trees.unshift('pear')
     listTrees();
-}
+};
 
 //remove the first tree from the list
 
@@ -50,14 +50,21 @@ document.querySelector('#remove_tree1').onclick = () => {
 document.querySelector('#remove_tree2').onclick = () => {
     trees.splice(1,1);
     listTrees();
-}
+};
 
 //Remove the last tree from the list
 
 document.querySelector('#remove_treeLast').onclick = () => {
-    trees.pop();
-    listTrees();
-}
+    if (trees.length > 1) {
+        trees.pop();
+        listTrees();
+    } else {
+        listTrees();
+
+        error.textContent = "You need at least one tree in the list to remove it!"
+        displayResults.textContent = "";
+    }  
+};
 
 
 
