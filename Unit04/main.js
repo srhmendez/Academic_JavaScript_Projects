@@ -9,8 +9,8 @@ const trees = ['oak', 'Pine', 'aspen', 'Bald Cypress']
 const error = document.querySelector('#error')
 const displayResults = document.querySelector('#treelist')
 
-displayResults.textContent = 'Testing right here'
-error.textContent = 'testing'
+//displayResults.textContent = 'Testing right here'
+//error.textContent = 'testing'
 
 //display the lsit of trees inside the display treelist div
 
@@ -61,59 +61,53 @@ document.querySelector('#remove_treeLast').onclick = () => {
 
 
 
+
+
+//Sort the array locale compare after tolowercase will sort alphabetically in the same case but not change the originally array
+document.querySelector("#sortTrees").onclick = () => {
+    trees.sort((a, b) => {
+      return a.toLocaleLowerCase().localeCompare(b.toLocaleLowerCase());
+    });
+    listTrees();
+  };
+
+
 //Turns the strings into all lowercase letters
 
-const newListTrees = () => {
+document.querySelector("#lowerTrees").onclick = () => {
+    trees.toLocaleString();
+    // console.log(trees.toLocaleString().toLowerCase());
+    let myTrees = trees.toLocaleString().toLowerCase();
+    // console.log(myTrees.split(","));
     let treeList = "";
-    newTrees.forEach(tree => {
-        treeList += `${tree} <br>`
-
-    })
-    displayResults.innerHTML = `${treeList} <span>There are ${newTrees.length} elements long</span>`;
-}
-
-//Sort list of trees A-Z
-
-document.querySelector('#sortTrees').onclick = () => {
-    trees.sort();
-    listTrees();
-}
-
-//Lower Case of Array Items
-
-document.querySelector('#lowerTrees').onclick = () => {
-    let treeList = trees.map(tree => tree.toLowerCase());
-    newListTrees();
-}
+    myTrees.split(",").forEach(tree => {
+      treeList += `${tree}<br>`;
+      // console.log(tree);
+      displayResults.innerHTML = `${treeList} <span>${trees.length} trees in the list.</span>`;
+    });
+  };
 
 
 //Show the Third Tree
-document.querySelector('#showName3').onclick = () => {
-
-
-    if(TREES.length < 3) {
-        document.querySelector('#errList').innerHTML = `<br> <strong> We're sorry, the array  needs to have at least three items to show only the third item.</strong>`;
-        } 
-        else 
-        {
-        
-        newTREES = TREES.slice(2, 3);
-        newLISTTREES();
-    }   
-
-   
-}
+document.querySelector("#showName3").onclick = () => {
+    if (trees.length < 3) {
+      displayResults.innerHTML = "";
+      error.innerHTML = "There is no tree 3 to display!!!";
+    } else {
+      treeList = [...trees];
+      displayResults.innerHTML = `Tree #3 is: ${treeList[2]}`;
+    }
+  };
 
 //Show the Fourth Tree
-document.querySelector('#showName4').onclick = () => {
-
-    if(trees.length < 4) {
-        
-        document.querySelector('#errList').innerHTML = `<br> <strong> ERROR! Array needs more than 4 items to show only the fourth. </strong>`;
+document.querySelector("#showName4").onclick = () => {
+    if (trees.length < 4) {
+      displayResults.innerHTML = "";
+      error.textContent = "There is no tree 4 to display!!!";
+    } else {
+      //console.log(trees.length);
+      treeList = [...trees];
+      displayResults.innerHTML = `Tree # 4: is ${treeList[3]}`;
+      //console.log("check");
     }
-    else {
- 
-        newTrees = Trees.slice(3);
-        newlistTrees();
-    }
-}
+  };

@@ -67,11 +67,27 @@ li {
 }
 main div#treelist {
     background-color:rgb(211, 255, 211);
-    height:200px;
+    height:100%;
+    min-height:100px;
     margin-bottom:50px;
+    padding-top:10px;
+    padding-left:10px;
+    font-size:1.3rem;
+    padding-bottom:10px;
 }
 main div#treelist span {
     color:red;
+    font-weight:600;
+}
+main div#error {
+    color:red;
+    font-weight: 600;
+    padding-top:10px;
+    padding-left:10px;
+    font-size:2rem;
+    background-color:rgb(255, 235, 235);
+    height:100%;
+    min-height:50px;
 }
 
 /*Button styling*/
