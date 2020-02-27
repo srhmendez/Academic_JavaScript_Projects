@@ -41,7 +41,11 @@ document.querySelector('#add_pear').onclick = () => {
 //remove the first tree from the list
 
 document.querySelector('#remove_tree1').onclick = () => {
-    trees.shift('pear')
+    if (trees.length > 2) {
+        error.textContent = "You need at least 2 trees to delete the 2nd tree!"
+    } else if (trees.length >= 2) {
+        trees.splice(1,1)
+    }
     listTrees();
 }
 
