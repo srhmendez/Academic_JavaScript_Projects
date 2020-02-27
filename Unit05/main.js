@@ -41,20 +41,27 @@ document.querySelector('#add_pear').onclick = () => {
 //remove the first tree from the list
 
 document.querySelector('#remove_tree1').onclick = () => {
-    if (trees.length > 2) {
-        error.textContent = "You need at least 2 trees to delete the 2nd tree!"
-    } else if (trees.length >= 2) {
-        trees.splice(1,1)
-    }
+  if (trees.length > 1) {
+    trees.shift();
     listTrees();
-}
+  } else {
+    listTrees();
+
+    error.textContent = "You need at least one tree to delete the 1st tree!";
+    displayResults.textContent = "";
+  }
+};
 
 //remove the second tree from the list
 
 document.querySelector('#remove_tree2').onclick = () => {
-    trees.splice(1,1);
+    if (trees.length > 2) {
+      error.textContent = "You need at least 2 trees to delete the 2nd tree!"
+    } else if (trees.length >= 2) {
+      trees.splice(1,1)
+    }
     listTrees();
-};
+}
 
 //Remove the last tree from the list
 
