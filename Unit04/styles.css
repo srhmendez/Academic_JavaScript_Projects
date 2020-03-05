@@ -1,0 +1,45 @@
+body{
+    margin:0 auto;
+    padding:0;
+    max-width:960px;
+}
+header{
+    background-image: url(/images/hero.jpg);
+    margin:auto;
+    max-width:960px;
+    height:400px;
+    
+}
+header h1 {
+    padding-top:2rem;
+    margin:0;
+    font-size:3rem;
+}
+header h2 {
+    font-size:2rem;
+}
+header h1,h2 {
+    margin:0;
+    margin-left:3rem;
+    color:white;
+}
+main h1 {
+    color:rgb(74, 74, 128);
+    
+}
+ul {
+    list-style-image: url(/images/checkmark-icon.png);
+}
+ul li {
+    color:rgb(74, 74, 128);
+    font-size:1.4rem;
+}
+
+footer {
+    background-color:grey;
+    color:white;
+    padding-top:10px;
+    padding-bottom:10px;
+    width:100%;
+    text-align: center;
+}
