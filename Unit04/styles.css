@@ -37,7 +37,8 @@ ul li {
 main p {
     font-size:1.3rem;
     padding:10px;
-    background: rgb(212, 212, 212);
+    background: rgb(238, 238, 238);
+    color:rgb(107, 0, 230);
 }
 
 footer {
