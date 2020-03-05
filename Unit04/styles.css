@@ -34,6 +34,9 @@ ul li {
     color:rgb(74, 74, 128);
     font-size:1.4rem;
 }
+main p {
+    font-size:1.3rem;
+}
 
 footer {
     background-color:grey;
