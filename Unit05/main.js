@@ -55,7 +55,7 @@ document.querySelector('#remove_tree1').onclick = () => {
 //remove the second tree from the list
 
 document.querySelector('#remove_tree2').onclick = () => {
-    if (trees.length > 2) {
+    if (trees.length < 2) {
       error.textContent = "You need at least 2 trees to delete the 2nd tree!"
     } else if (trees.length >= 2) {
       trees.splice(1,1)
@@ -81,29 +81,32 @@ document.querySelector('#remove_treeLast').onclick = () => {
 
 
 
-//Sort the array locale compare after tolowercase will sort alphabetically in the same case but not change the originally array
-document.querySelector("#sortTrees").onclick = () => {
-    trees.sort((a, b) => {
-      return a.toLocaleLowerCase().localeCompare(b.toLocaleLowerCase());
-    });
+//Sort the array 
+
+document.querySelector('#sortTrees').onclick = () => {
+  if (trees.length > 0) {
+      trees.sort((a, b) => {
+          return a.toLowerCase().localeCompare(b.toLowerCase())
+      })
+      listTrees();
+
+      errorElement.textContent = ''
+  }
+  else {
+
+      errorElement.textContent = "Can't sort without any trees in the list."
+  }
+}
+//make all trees lowercase
+
+document.querySelector('#lowerTrees').onclick = () => {
+    let treeList = []
+    treeList = trees.map(trees => trees.toLowerCase())
+    trees.splice(0, treeList.length, ...treeList)
     listTrees();
-  };
 
+};
 
-//Turns the strings into all lowercase letters
-
-document.querySelector("#lowerTrees").onclick = () => {
-    trees.toLocaleString();
-    // console.log(trees.toLocaleString().toLowerCase());
-    let myTrees = trees.toLocaleString().toLowerCase();
-    // console.log(myTrees.split(","));
-    let treeList = "";
-    myTrees.split(",").forEach(tree => {
-      treeList += `${tree}<br>`;
-      // console.log(tree);
-      displayResults.innerHTML = `${treeList} <span>${trees.length} trees in the list.</span>`;
-    });
-  };
 
 
 //Show the Third Tree
