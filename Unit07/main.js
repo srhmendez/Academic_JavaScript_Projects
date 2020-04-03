@@ -1,27 +1,56 @@
 document.querySelector('#title').innerHTML = "Pizza Emporium"
 document.querySelector('#slogan').innerHTML = "Literal Objects"
 
-//show results of function in the DOM
-let story = document.createElement("p");
-let results = document.querySelector("#result");
+//creating objects
 
-//main function
+const pizza = {
+    crust: "thin",
+    size: "small",
+    topping: "pepperoni",
+    buildPizza: function() {
+        console.log('buildPizza method has been called')
+        message = `We are now baking your ${pizza.size} pizza on ${pizza.crust} crust with ${pizza.topping} and cheese`
+        document.querySelector('#feedback').textContent = message
+    },
+    shoppingList: () => {
+        let flour = 1
+        if (pizza.crust === 'thick') flour *= 2
+        message = `You will need to purchase ${flour} cups of flour and 1 pound of ${pizza.topping}.`
+        document.querySelector('#feedback').textContent = message;
 
-function tellStory() {
+        if (pizza.crust === 'thin') four = 1
+        message = `You will need to purchase ${flour} cup of flour and 1 pound of ${pizza.topping}`
+        document.querySelector('#feedback').textContent = message;
 
-    let nounsArray = document.querySelector("#nouns").value.toLowerCase().split(/\s*[,\n." "]+\s*/);
-    console.log(nounsArray)
-
-    let adjectivesArray = document.querySelector('#adjectives').value.toLowerCase().split(/\s*[,\n." "]+\s*/)
-    console.log(adjectivesArray)
-
-    let verbsArray = document.querySelector('#verbs').value.toLowerCase().split(/\s*[,\n." "]+\s*/)
-    console.log(verbsArray)
-
-
-theStory = `Once upon a time the ${nounsArray[0]} was ${adjectivesArray[0]}, but the ${nounsArray[1]} begged to differ. After much contemplation, the ${nounsArray[2]} decided to ${verbsArray[0]} to make his ${adjectivesArray[1]} family feel better. Unfortunately nothing seemed to ${verbsArray[1]}. ${nounsArray[3]} wanted everything to be ${adjectivesArray[2]} but ${nounsArray[4]}, ${nounsArray[5]}, and ${nounsArray[6]} were too busy playing to notice. THE END. `;
-const output = document.querySelector("#result");
-
-output.innerHTML = theStory;
+    }
 
 }
+
+// Crust Type 
+
+document.querySelector('#thin').addEventListener('click', () => pizza.crust = 'thin')
+
+document.querySelector('#thick').addEventListener('click', () => pizza.crust = 'thick')
+
+//Toppings Type
+
+document.querySelector('#pepperoni').addEventListener('click', () => pizza.topping = 'pepperoni')
+
+document.querySelector('#sausage').addEventListener('click', () => pizza.topping = 'sausage')
+
+//Size Selection
+
+document.querySelector('#small').addEventListener('click', () => pizza.size = 'small')
+
+document.querySelector('#large').addEventListener('click', () => pizza.size = 'large')
+
+
+//Build Pizza Button
+
+document.querySelector('#order').addEventListener('click', pizza.buildPizza)
+
+//Shopping List Button
+document.querySelector('#makeList').addEventListener('click', pizza.shoppingList)
+
+
+let feedback = document.querySelector('#feedback')
