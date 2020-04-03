@@ -31,27 +31,49 @@
         </ul>
     <div id="wrapper">
 
-        <h2 id="nouns"></h2>
-        <div class="columnstyling" id="Nouns">
+        <article>
+            <h2>Seven Nouns</h2>
+                <textarea class="columnstyling" id="nouns">House
+Car
+TV
+Dog
+Bucket
+Trash
+Music
+                </textarea>
+            </article>
+       
 
-        </div>
+        <article>
+        <h2>Three Adjectives</h2>
+            <textarea class="columnstyling" id="adjectives">Beautiful
+Crazy
+Funny
+            </textarea>
+        </article>
 
-        <h2 id="adjectives"></h2>
-        <div class="columnstyling" id="Adjectives">
-
-        </div>
-
-        <h2 id="verbs"></h2>
-        <div class="columnstyling" id="Verbs">
-
-        </div>
+        <article>
+            <h2>Two Verbs</h2>
+            <textarea class="columnstyling" id="verbs">Dance
+Skip
+            </textarea>
+        </article>
+        
     </div>
-        <button id="storytime">Tell The Story</button>
+
+        <button onclick="tellStory()">Tell The Story</button>
+
+        <div class="results">
+            <div id="result"></div>
+        </div>
+        
     </main>
+
+    
     <footer>
         <p>Assignment for DGM 2760 by Sarah Mendez</p>
     </footer>
-    
+    <script src="main.js"></script>
 </body>
-<script src="/main.js"></script>
+
 </html>
