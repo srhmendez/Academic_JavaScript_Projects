@@ -1,5 +1,5 @@
-document.querySelector('#title').innerHTML = "Nonsense Story"
-document.querySelector('#slogan').innerHTML = "String Manipulation"
+document.querySelector('#title').innerHTML = "Pizza Emporium"
+document.querySelector('#slogan').innerHTML = "Literal Objects"
 
 //show results of function in the DOM
 let story = document.createElement("p");

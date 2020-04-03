@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nonsense Story</title>
-    <link href="../Unit07/styles.css" rel="stylesheet"/>
+    <title>Pizza Emporium</title>
+    <link href="/styles.css" rel="stylesheet"/>
 </head>
 <body>
 
@@ -30,29 +30,66 @@
         </ul>
     
         <h1>Crust Options</h1>
-            <div>
+            <div class="radiodiv">
+                
+                <div class="option1">
+                <input type="radio" id="thin" name="crust" value="thin crust" checked>
+                    <label for="Thin Crust">Thin Crust</label>
+                </div>
 
+                <div class="option2">
+                <input type="radio" id="thick" name="crust" value="thick crust">
+                    <label for="Thick Crust">Thick Crust</label>
+                </div>
             </div>
 
         <h1>Topping Options</h1>
-            <div>
+            <div class="radiodiv">
+
+                <div class="option1">
+                    <input type="radio" id="sausage" name="topping" value="sausage" checked>
+                    <label for="sausage">Sausage</label>
+                </div>
+                
+                <div class="option2">
+                    <input type="radio" id="pepperoni" name="topping" value="pepperoni">
+                    <label for="pepperoni">Pepperoni</label>
+                </div>
+                
                 
             </div>
 
         <h1>Size Options</h1>
-            <div>
+            <div class="radiodiv">
+
+                <div class="option1">
+                    <input type="radio" id="small" name="size" value="small" checked>
+                    <label for="small">Small</label>
+                </div>
+                
+                <div class="option2">
+                    <input type="radio" id="large" name="size" value="large">
+                    <label for="large">Large</label>
+                </div>
+                
                 
             </div>  
 
+
         <h1>Place Order</h1>
-           <button id="order">Create Pizza</button> 
+           <button id="order" onclick="createPizza()">Create Pizza</button> 
+
+
+
 
         <h1>Shopping List</h1>
-            <button id="order">Create List</button> 
+            <button id="order" onclick="createList()">Create List</button> 
  
 
+
+
         <h1>Messages to User</h1>
-            <div>
+            <div id="feedback">
                 
             </div> 
 
