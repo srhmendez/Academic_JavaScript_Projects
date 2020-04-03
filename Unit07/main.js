@@ -1,7 +1,17 @@
+
+
+
+//-----------------------------------------TITLE & SLOGAN IDENTITIES-------------------------------------------//
+
+
 document.querySelector('#title').innerHTML = "Pizza Emporium"
 document.querySelector('#slogan').innerHTML = "Literal Objects"
 
-//creating objects
+
+
+
+//-------------------------------Creating Document Objects and attaching Methods------------------------------//
+
 
 const pizza = {
     crust: "thin",
@@ -26,6 +36,10 @@ const pizza = {
 
 }
 
+//-----------------------------------Event Listeners for Radio Buttons --------------------------------------//
+
+
+
 // Crust Type 
 
 document.querySelector('#thin').addEventListener('click', () => pizza.crust = 'thin')
@@ -45,12 +59,23 @@ document.querySelector('#small').addEventListener('click', () => pizza.size = 's
 document.querySelector('#large').addEventListener('click', () => pizza.size = 'large')
 
 
+
+
+
+//-----------------------------------Attaching Event Listeners to Buttons ------------------------------------//
+
+
 //Build Pizza Button
 
 document.querySelector('#order').addEventListener('click', pizza.buildPizza)
 
 //Shopping List Button
+
 document.querySelector('#makeList').addEventListener('click', pizza.shoppingList)
 
+
+
+
+//---------------------------------------Creating feedback Space in DOM ---------------------------------------//
 
 let feedback = document.querySelector('#feedback')
