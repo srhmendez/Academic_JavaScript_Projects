@@ -1,0 +1,28 @@
+{
+    "hotels": [
+        {
+        "name": "Marriot",
+        "rooms": "50", 
+        "gym": "yes",
+        "roomtypes": ["King", "Queen", "Double"],
+        "address": "259 OceanView Drive",
+        "picture": "room1.jpg"
+        },
+        {
+        "name": "Sheraton",
+        "rooms": "80",
+        "gym": "no",
+        "roomtypes": ["Full Kitchen", "King", "Single","Opptional Cot"],
+        "address": "4532 Green Cove",
+        "picture": "room2.jpg"
+        },
+        {
+        "name": "Hilton",
+        "rooms": "200",
+        "gym": "yes",
+        "roomtypes": ["Luxury Suite", "Balcony View", "Queen", "2 Double Beds"],
+        "address": "555 Lucky Street",
+        "picture": "room3.jpg"
+        }
+    ]
+}
