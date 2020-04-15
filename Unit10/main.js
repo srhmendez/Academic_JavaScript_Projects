@@ -38,7 +38,7 @@ document.querySelector('#address').textContent = `${hotelChoice.address}`
 document.querySelector('#roomType').textContent = `${hotelChoice.roomtypes}` 
 document.querySelector('#rooms').textContent = `${hotelChoice.rooms}`
 document.querySelector('#gym').textContent = `${hotelChoice.gym}` 
-document.querySelector('#picture').src = `../images/${hotelChoice.picture}` 
+document.querySelector('#picture').src = `../../Unit10/images/${hotelChoice.picture}` 
 
 
 
