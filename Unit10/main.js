@@ -7,7 +7,7 @@ document.querySelector('#slogan').innerHTML = "Such a Lovely Place";
 
 async function getHotelData() {
     try { 
-        const response = await fetch('../hotels.json')
+        const response = await fetch('../Unit10/hotels.json')
         return await response.json() //.json returns json object instead of all the response data
 
     } catch (error) {
