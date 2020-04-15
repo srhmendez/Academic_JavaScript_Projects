@@ -1,42 +1,46 @@
-document.querySelector('#title').innerHTML = "Hotel California"
-document.querySelector('#slogan').innerHTML = "Such a Lovely Place"
+document.querySelector('#title').innerHTML = "Hotel California";
+document.querySelector('#slogan').innerHTML = "Such a Lovely Place";
 
 
 
-// Grant's tomb question generator
+// Hotel California
 
-const theQuestion = {
+async function getHotelData() {
+    try { 
+        const response = await fetch('../hotels.json')
+        return await response.json() //.json returns json object instead of all the response data
 
-    stem: "Who is buried in Grant's Tomb?",
-    option1: "Bill Cosby",
-    option2: "Cleopatra",
-    option3: "Grant",
-    option4: "David Bowie",
-    correct: '3',
-    display: () => {
-        document.querySelector('#stem').textContent = theQuestion.stem
-        document.querySelector('#answer1').textContent = theQuestion.option1
-        document.querySelector('#answer2').textContent = theQuestion.option2
-        document.querySelector('#answer3').textContent = theQuestion.option3
-        document.querySelector('#answer4').textContent = theQuestion.option4
+    } catch (error) {
 
-
-    },
-    check: (buttonAnswer) => {
-        if (buttonAnswer === theQuestion.correct){
-            document.querySelector('.feedback').textContent = "You are Correct!!"
-        } else {
-            document.querySelector('.feedback').textContent = "Oops, Try Again :( "
-        }
+        console.error(error)
     }
-
 }
 
+let hotelData = {}
+getHotelData().then(data => hotelData = data)
 
-document.querySelector('#answer1').addEventListener('click', () => theQuestion.check('1'))
-document.querySelector('#answer2').addEventListener('click', () => theQuestion.check('2'))
-document.querySelector('#answer3').addEventListener('click', () => theQuestion.check('3'))
-document.querySelector('#answer4').addEventListener('click', () => theQuestion.check('4'))
+let hotelList = document.querySelectorAll('button');
+hotelList.forEach(hotel => {
+    
+    hotel.addEventListener('click', hotelInfo)
+    
+});
+
+function hotelInfo(event) {
+    let hotelChoice = hotelData.hotels.find(hotel => {
+        return event.target.id === hotel.name.toLowerCase()
+    })
+
+    console.log(hotelChoice)
+
+document.querySelector('#hotelName').textContent = `${hotelChoice.name} Hotel Information` 
+document.querySelector('#address').textContent = `${hotelChoice.address}` 
+document.querySelector('#roomType').textContent = `${hotelChoice.roomtypes}` 
+document.querySelector('#rooms').textContent = `${hotelChoice.rooms}`
+document.querySelector('#gym').textContent = `${hotelChoice.gym}` 
+document.querySelector('#picture').src = `../images/${hotelChoice.picture}` 
 
 
-theQuestion.display()
+
+
+}
