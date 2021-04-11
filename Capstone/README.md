@@ -7,4 +7,4 @@
 - Take search query, convert to string and remove whitespace
 - Display search results to the DOM 
 
-[View Project](https://hungry-hodgkin-c33a3c.netlify.app/)
+[View Project](https://reverent-payne-1cd19c.netlify.app/)
