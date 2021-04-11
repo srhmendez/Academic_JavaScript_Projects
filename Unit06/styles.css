@@ -3,7 +3,7 @@ body {
     margin-bottom:0;
 }
 header {
-    background-image: url(../Unit06/images/bunnyhero.jpg);
+    background-image: url(images/bunnyhero.jpg);
     height:18rem;
     max-width:960px;
     margin:auto;
@@ -33,7 +33,7 @@ main {
     max-width: 960px;
 }
 li {
-    list-style-image: url(../Unit06/images/checkmark.png); 
+    list-style-image: url(images/checkmark.png); 
     font-size:1.4rem;
 }
 button {

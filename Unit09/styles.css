@@ -6,7 +6,7 @@ body {
 
 
 header div.imgcontainer{
-    background-image: url(../Unit09/images/toy_truck.jpg);
+    background-image: url(images/toy_truck.jpg);
     background-repeat: no-repeat;
     background-size: contain;
     max-height:32em;
@@ -50,7 +50,7 @@ main {
 }
 
 main li {
-    list-style-image: url(../Unit09/images/checkmark.png); 
+    list-style-image: url(images/checkmark.png); 
     font-size:1.4rem;
 }
 main li.none {

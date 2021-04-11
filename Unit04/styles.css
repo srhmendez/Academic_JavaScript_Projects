@@ -4,7 +4,7 @@ body{
     max-width:960px;
 }
 header{
-    background-image: url(../Unit04/images/hero.jpg);
+    background-image: url(images/hero.jpg);
     margin:auto;
     max-width:960px;
     height:400px;
@@ -28,7 +28,7 @@ main h1 {
     
 }
 ul {
-    list-style-image: url(../Unit04/images/checkmark-icon.png);
+    list-style-image: url(images/checkmark-icon.png);
 }
 ul li {
     color:rgb(74, 74, 128);

@@ -6,7 +6,7 @@ header, body, footer {
 header {
     margin-bottom:0; 
     height:430px; 
-    background-image: url(/Unit03/images/mario_header.png);
+    background-image: url(images/mario_header.png);
     padding-top:3rem;
 }
 
@@ -51,7 +51,7 @@ main h2 {
     font-weight:600;
 }
 ul {
-    list-style-image: url(/Unit02/images/checkmark-icon.png);
+    list-style-image: url(images/checkmark-icon.png);
     padding-top:5px;
 }
 li {
