@@ -6,3 +6,5 @@
 - Create an event listener for the search bar
 - Take search query, convert to string and remove whitespace
 - Display search results to the DOM 
+
+[View Project](https://hungry-hodgkin-c33a3c.netlify.app/)
