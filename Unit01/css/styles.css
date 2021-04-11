@@ -43,7 +43,7 @@ main h2 {
     font-weight:600;
 }
 ul {
-    list-style-image: url(/Unit01/images/icons8-ok-50.png);
+    list-style-image: url(images/icons8-ok-50.png);
     padding-top:5px;
 }
 li {
