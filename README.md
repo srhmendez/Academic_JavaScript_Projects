@@ -1,4 +1,4 @@
-# DGM_2740_Web_Languages_1
+# DGM-2740-Web-Languages-1
 
 This repository contains Units 1-10 &amp; the Capstone Final for DGM 2760 Web Languages 1 taken at UVU.
 
